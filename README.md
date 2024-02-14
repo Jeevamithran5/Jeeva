@@ -1,9 +1,9 @@
-def fibonacci(limit):
-    fib_sequence = [0, 1]
-    while fib_sequence[-1] + fib_sequence[-2] <= limit:
-        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
-    return fib_sequence
+def print_positive_numbers(lst):
+    positive_numbers = [num for num in lst if num > 0]
+    print(positive_numbers)
 
-limit = int(input("Enter the limit for Fibonacci numbers: "))
-fib_numbers = fibonacci(limit)
-print("Fibonacci numbers up to", limit, "are:", fib_numbers)
+list1 = [12, -7, 5, 64, -14]
+list2 = [12, 14, -95, 3]
+
+print_positive_numbers(list1)
+print_positive_numbers(list2)
